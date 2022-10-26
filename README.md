@@ -7,7 +7,10 @@ This doc contains my notes on all kinds of learning.
 - [Deploy With Helm](./helm/Deploy-With-Helm.md)
 
 ## Kubernetes
+- [Kubernetes Ingress Notes](./kubernetes/Ingress.md)
 
 ## Service Mesh
 
 ## Observability
+
+### Prometheus

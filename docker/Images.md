@@ -34,6 +34,7 @@
   - Pull: `d image pull <image-name:TAG>`
   - List: `d image list`
   - Remove: `d image rm`
+  - Inspect: `d image inspect`
 
 ## Registry
 Whenever we pull images, we are pulling from a registry. For example, the dockerhub or Azure Container Registry. When we pulling an image, we can also say we are pulling to the image to the local registry. **Local registry path is `/var/lib/docker/overlay2`.**

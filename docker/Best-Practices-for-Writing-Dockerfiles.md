@@ -1,6 +1,7 @@
 # Best Practices for Writing Dockerfiles
 
-[Article Link](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
+- [Best Practices for Writing Dockerfiles](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
+- [Multi-stage builds](https://docs.docker.com/build/building/multi-stage/)
 A docker image consists of read-only layers, each of which represents a Dockerfile instruction. We got the image by stacking layers together. Each layer represents the changes from the previous layer.
 
 ```Dockerfile

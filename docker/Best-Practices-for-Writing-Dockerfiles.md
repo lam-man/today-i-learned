@@ -1,7 +1,5 @@
 # Best Practices for Writing Dockerfiles
 
-- [Best Practices for Writing Dockerfiles](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
-- [Multi-stage builds](https://docs.docker.com/build/building/multi-stage/)
 A docker image consists of read-only layers, each of which represents a Dockerfile instruction. We got the image by stacking layers together. Each layer represents the changes from the previous layer.
 
 ```Dockerfile
@@ -149,6 +147,11 @@ Better to split `RUN` command into multiple lines to increase the readability an
       && rm -rf /var/lib/apt/lists/*
   ```
   - :warning: 
+
+## Related articles
+- [Best Practices for Writing Dockerfiles](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
+- [Multi-stage builds](https://docs.docker.com/build/building/multi-stage/)
+- [Builder pattern vs. Multi-stage builds in Docker](https://blog.alexellis.io/mutli-stage-docker-builds/)
 
 ## TODO
 - [ ] How to use `LABEL` in images organizing? For example, licensing and automation usage. Need concrete examples.

@@ -15,7 +15,8 @@
   - Data you put into the docker volume through certain container can be found in path `/var/lib/docker/volumes/_data`.
   - Use command to log into the container `docker exec -it <container-name> <program-name>`.
     - Example: `docker exec -it voltext sh`
-  - Use command to delete the container `docker container rm voltest -f`
+  - Use command to delete the container `docker container rm voltest -f` or `d rm voltest -f`.
+  - To list the docker volumes, use command `docker volume ls`.
 
 ## Secrets
 

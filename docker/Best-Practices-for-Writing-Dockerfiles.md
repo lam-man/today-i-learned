@@ -155,3 +155,4 @@ Better to split `RUN` command into multiple lines to increase the readability an
 
 ## TODO
 - [ ] How to use `LABEL` in images organizing? For example, licensing and automation usage. Need concrete examples.
+- [ ] How to build an image with version using command `docker build -t <image-name> .`

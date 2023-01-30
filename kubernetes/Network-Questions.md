@@ -10,3 +10,5 @@
     - When a client makes a request to a service, the Envoy proxy intercepts the request and checks the destination rules to determine which version of the service should handle the request. This is done by matching the request's host and path to the host and path specified in the destination rule.
     - Once a match is found, the Envoy proxy uses the weight specified in the destination rule to determine how much traffic should be sent to each subset of instances. For example, if one subset has a weight of 90 and another has a weight of 10, the Envoy proxy will send 90% of the traffic to the first subset and 10% to the second.
     - Istio destination rules can also be used to configure advanced features like connection pool size, circuit breaking, and timeout settings. These settings allow you to control the behavior of the service and handle situations like high traffic or service outages.
+- [ ] How `iptables` got used by envoy? 
+- [ ] How `iptables` works for traffic routing?

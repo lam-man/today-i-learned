@@ -14,3 +14,4 @@
 - [ ] How `iptables` works for traffic routing?
 - [X] L4 load balancer will not touch data, then how the backend servers know how to decrypt it?
   - Nope. LB does nothing except message (request) forwarding. At the very beginning (hand shake step), LB will have a backend server to establish the connection. Then, all the information change are between client and the specific backend server. LB just transfer the information using NAT.
+  - LB are transparent between client and server.

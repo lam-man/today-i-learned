@@ -13,7 +13,7 @@ When create a k8s object using a `yaml` file, following fields will have to be p
 - `metadata` - Data that helps uniquely identify the object, including a name string, UID, and optional namespace
 - `spec` - What state you desire for the object
 
-## Kubernetes Object Management
+## Labels and Selectors
 
 
 ## ToDo

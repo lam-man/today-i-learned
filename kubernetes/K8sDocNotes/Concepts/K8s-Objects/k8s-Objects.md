@@ -48,6 +48,12 @@ Namespaces is used to isolate resources in a cluster.
 - :exclamation: Ports within a namespace are unique, but not across namespaces.
 - Namespace-based scoping is applicable only for namespaced objects. (e.g. Deployment, Service, etc.) Will not work for cluster-wide objects (e.g. StorageClass, Node, PersistentVolume, etc.)
 
+### Namespace and DNS
+K8s will create a DNS entry for each service. The DNS entry will be `<service-name>.<namespace>.svc.cluster.local`. 
+- When a container only uses the `<service-name>` to access the service, **the DNS entry will be resolved to the service in the same namespace**.
+- If a container wants to reach services in a different namespace, it needs to use the fully qualified domain name (FQDN) `<service-name>.<namespace>.svc.cluster.local`.
+
+> :exclamation: **Note**: Not all objects are in a namespace. For example, Nodes and PersistentVolumes are not in a namespace. To see which k8s resources are in a namespace, run `kubectl api-resources --namespaced=true`. Or run `kubectl api-resources --namespaced=false` to see which k8s resources are not in a namespace.
 
 ## ToDo
 - [ ] You may want to reade the [kubectl book](https://kubectl.docs.kubernetes.io/guides/)
